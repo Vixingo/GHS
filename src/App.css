@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Roboto Slab", serif;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+body {
+    background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
+}
+/* Header */
+.Header {
+    background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
+}
+.Header .container {
+    position: relative;
+}
+.navbar {
+    height: 88.5px;
+}
+.navbar-brand {
+    width: 190px;
+}
+.navbar-toggler {
+    padding: 0;
+    color: #fff;
+    border: none;
+}
+.nav-item {
+    margin: auto 5px;
+}
+.nav-link {
+    color: #fff;
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+}
+.nav-link:focus {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #ffffffcc;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.get_in a {
+    color: #fff;
+    background-color: #ce6c33;
+    height: 36px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.get_in h6 {
+    font-weight: 400;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (min-width: 768px) {
+    .navbar {
+        height: 100px;
+    }
+    .get_in {
+        position: absolute;
+        right: 0;
+        width: 132px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .get_in span {
+        display: none;
+    }
+    .navbar-nav {
+        margin-right: 150px;
+    }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1200px;
+    }
 }
