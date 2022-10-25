@@ -1,0 +1,17 @@
+.Team {
+    background: rgba(255, 255, 255, 0.2);
+    background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%), rgba();
+}
+.Team2 {
+    background-color: #fff;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+@media screen and (min-width: 992px) {
+    .team_img {
+        margin-top: 50px;
+    }
+    .Team {
+        padding-bottom: 50px;
+    }
+}

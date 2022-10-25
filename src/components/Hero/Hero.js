@@ -76,25 +76,28 @@ function Hero() {
                             </p>
                         </Box>
                     </div>
-                    <Box sx={{ textAlign: "center" }}>
-                        <KeyboardArrowDownRoundedIcon
-                            sx={{
-                                fontSize: "50px",
-                                color: "#fff",
-                                marginBottom: "-10px",
-                            }}
-                        />
-                        <Typography
-                            sx={{
-                                color: "#fff",
-                                fontFamily: "Roboto Slab",
-                                fontWeight: "600",
-                                fontSize: "18px",
-                            }}
-                        >
-                            Learn More
-                        </Typography>
-                    </Box>
+                    <a href="#Choose">
+                        <Box sx={{ textAlign: "center" }}>
+                            <KeyboardArrowDownRoundedIcon
+                                sx={{
+                                    fontSize: "50px",
+                                    color: "#fff",
+                                    marginBottom: "-10px",
+                                }}
+                            />
+                            <Typography
+                                sx={{
+                                    color: "#fff",
+                                    fontFamily: "Roboto Slab",
+                                    fontWeight: "600",
+                                    fontSize: "18px",
+                                    paddingBottom: "20px",
+                                }}
+                            >
+                                Learn More
+                            </Typography>
+                        </Box>
+                    </a>
                 </div>
             </section>
         </>

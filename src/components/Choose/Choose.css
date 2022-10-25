@@ -1,0 +1,11 @@
+.Choose {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+}
+@media screen and (min-width: 992px) {
+    .Choose {
+        padding: 100px 50px;
+    }
+}
