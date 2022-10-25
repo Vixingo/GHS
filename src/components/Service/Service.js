@@ -45,13 +45,13 @@ function Service() {
                     <IconBox
                         iconclass="far fa-edit"
                         color="#000"
-                        tittle=" Systems Design and Integration "
+                        tittle=" Systems Design and Integration"
                         detail="Benefit from a unique systems design and integration made to improve your business efficiency and operation. "
                     />
                     <IconBox
                         iconclass="fa-solid fa-chalkboard-user"
                         color="#000"
-                        tittle="Automation and Development "
+                        tittle="Automation and Development"
                         detail="Automate tedious IT processes and improve work efficiency that will help your business meet KPI's. "
                     />
                     <IconBox
