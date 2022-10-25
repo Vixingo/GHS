@@ -1,11 +1,12 @@
 import React from "react";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
+import "./Header.css";
 function Header() {
     return (
         <>
             <section className="Header">
-                <div className="container p-0">
+                <div className="container-fluid container-md p-0">
                     <nav class="navbar navbar-expand-lg px-2 px-lg-0">
                         <div class="container-fluid">
                             <a class="navbar-brand" href="#">
@@ -43,7 +44,9 @@ function Header() {
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">
                                             Our Services
-                                            <KeyboardArrowDownRoundedIcon />
+                                            <KeyboardArrowDownRoundedIcon
+                                                sx={{ fontSize: "20px" }}
+                                            />
                                         </a>
                                     </li>
                                     <li class="nav-item">

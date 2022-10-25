@@ -18,72 +18,10 @@ a {
 body {
     background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
 }
-/* Header */
-.Header {
-    background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
-}
-.Header .container {
-    position: relative;
-}
-.navbar {
-    height: 88.5px;
-}
-.navbar-brand {
-    width: 190px;
-}
-.navbar-toggler {
-    padding: 0;
-    color: #fff;
-    border: none;
-}
-.nav-item {
-    margin: auto 5px;
-}
-.nav-link {
-    color: #fff;
-    font-family: "Roboto Slab", serif;
-    font-weight: 500;
-}
-.nav-link:focus {
-    color: #fff;
-}
-.nav-link:hover {
-    color: #ffffffcc;
-}
-.navbar-toggler:focus {
-    box-shadow: none;
+::selection {
+    background-color: #519a53;
 }
 
-.get_in a {
-    color: #fff;
-    background-color: #ce6c33;
-    height: 36px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.get_in h6 {
-    font-weight: 400;
-}
-@media screen and (min-width: 768px) {
-    .navbar {
-        height: 100px;
-    }
-    .get_in {
-        position: absolute;
-        right: 0;
-        width: 132px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    .get_in span {
-        display: none;
-    }
-    .navbar-nav {
-        margin-right: 150px;
-    }
-}
 @media (min-width: 1400px) {
     .container,
     .container-lg,
@@ -94,3 +32,11 @@ body {
         max-width: 1200px;
     }
 }
+/*  
+   font-family: 'Exo 2', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
+
+    font-family: 'Roboto Slab', serif;
+    
+    */

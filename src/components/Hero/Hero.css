@@ -1,0 +1,23 @@
+.Hero {
+    margin-top: 40px;
+}
+.icon_box {
+    text-align: center;
+    max-width: 900px;
+    padding: 30px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Hero i {
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.icon_box p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    font-family: "Exo 2", sans-serif;
+}
