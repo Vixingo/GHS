@@ -15,6 +15,9 @@ function News() {
                             fontFamily: "Roboto Slab",
                             marginBottom: "20px",
                             textAlign: "center",
+                            "@media (min-width: 992px)": {
+                                fontSize: "2rem",
+                            },
                         }}
                     >
                         Find Out How We Can Help. Contact Us Today.
@@ -61,6 +64,7 @@ function News() {
                                 label="Name"
                                 variant="filled"
                                 color="success"
+                                size="small"
                                 sx={{
                                     backgroundColor: "#fff",
                                     width: "100%",
@@ -75,6 +79,7 @@ function News() {
                                 label="Email"
                                 variant="filled"
                                 color="success"
+                                size="small"
                                 sx={{
                                     backgroundColor: "#fff",
                                     width: "100%",
@@ -89,6 +94,7 @@ function News() {
                                 label="Phone"
                                 variant="filled"
                                 color="success"
+                                size="small"
                                 sx={{
                                     backgroundColor: "#fff",
                                     width: "100%",
