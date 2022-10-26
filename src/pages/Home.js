@@ -1,8 +1,8 @@
 import React from "react";
 import Choose from "../components/Choose/Choose";
-import Footer from "../components/Footer/Footer";
+
 import Greenhouse from "../components/Greenhouse/Greenhouse";
-import Header from "../components/Header/Header";
+
 import Hero from "../components/Hero/Hero";
 import News from "../components/News/News";
 import Service from "../components/Service/Service";
@@ -11,7 +11,6 @@ import Team2 from "../components/Team/Team2";
 function Home() {
     return (
         <>
-            <Header />
             <Hero />
             <Choose />
             <Team />
@@ -19,7 +18,6 @@ function Home() {
             <Service />
             <Greenhouse />
             <News />
-            <Footer />
         </>
     );
 }
