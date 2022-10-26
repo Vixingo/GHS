@@ -1,0 +1,33 @@
+.Footer {
+    background-color: #fff;
+    padding: 20px;
+}
+.Footer h4 {
+    color: #000;
+    margin: 16px 0;
+}
+.Footer a {
+    display: block;
+    font-family: "Roboto Slab";
+    color: #000;
+    margin-bottom: 5px;
+}
+.Footer a:hover {
+    color: #000000b0;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icons {
+    margin: 10px;
+    font-size: 30px;
+    transition: 0.3s;
+}
+.fa-linkedin:hover {
+    color: #0a66c2;
+}
+.fa-twitter:hover {
+    color: #1a8cd8;
+}

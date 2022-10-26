@@ -1,5 +1,6 @@
 import React from "react";
 import Choose from "../components/Choose/Choose";
+import Footer from "../components/Footer/Footer";
 import Greenhouse from "../components/Greenhouse/Greenhouse";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
@@ -18,6 +19,7 @@ function Home() {
             <Service />
             <Greenhouse />
             <News />
+            <Footer />
         </>
     );
 }
