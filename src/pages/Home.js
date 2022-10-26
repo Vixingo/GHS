@@ -1,5 +1,6 @@
 import React from "react";
 import Choose from "../components/Choose/Choose";
+import Greenhouse from "../components/Greenhouse/Greenhouse";
 import Header from "../components/Header/Header";
 import Hero from "../components/Hero/Hero";
 import Service from "../components/Service/Service";
@@ -14,6 +15,7 @@ function Home() {
             <Team />
             <Team2 />
             <Service />
+            <Greenhouse />
         </>
     );
 }
