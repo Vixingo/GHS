@@ -34,7 +34,7 @@
     box-shadow: none;
 }
 
-.get_in a {
+.get_in button {
     color: #fff;
     background-color: #ce6c33;
     height: 36px;
@@ -42,10 +42,42 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.get_in h6 {
+    border-radius: 0;
     font-weight: 400;
+    margin: 0;
 }
+
+.get_in button:hover {
+    border: 1px solid #ce6c33;
+}
+.offcanvas-body,
+.offcanvas-header {
+    background-color: #f7f7f7;
+}
+.offcanvas-body h1 {
+    color: #519a53;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    font-family: "Exo 2";
+}
+.offcanvas-body h2 {
+    font-weight: 600;
+    line-height: 1;
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Exo 2";
+}
+.offcanvas-body h3 {
+    font-weight: 300;
+    line-height: 1;
+    color: #43434a;
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-family: "Exo 2";
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
         height: 100px;
@@ -63,7 +95,7 @@
     .navbar-nav {
         margin-right: 150px;
     }
-    .get_in h6 {
+    .get_in button {
         font-weight: 500;
     }
 }
