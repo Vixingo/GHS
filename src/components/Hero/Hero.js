@@ -19,9 +19,7 @@ function Hero() {
                             margin: "0 auto",
                             textAlign: "center",
                             lineHeight: "62px",
-
                             marginBottom: "20px",
-
                             "@media(min-width:768px)": {
                                 fontSize: "50px",
                             },
@@ -77,7 +75,14 @@ function Hero() {
                         </Box>
                     </div>
                     <a href="#Choose">
-                        <Box sx={{ textAlign: "center" }}>
+                        <Box
+                            sx={{
+                                textAlign: "center",
+                                "@media (min-width:1400px)": {
+                                    marginTop: "100px",
+                                },
+                            }}
+                        >
                             <KeyboardArrowDownRoundedIcon
                                 sx={{
                                     fontSize: "50px",
