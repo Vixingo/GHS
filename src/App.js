@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Additional from "./pages/Additional";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import ProServices from "./pages/ProServices";
 
 function App() {
     return (
@@ -19,6 +20,10 @@ function App() {
                     />
 
                     <Route element={<Contact />} path="/contact" />
+                    <Route
+                        element={<ProServices />}
+                        path="/products-services"
+                    />
                 </Routes>
                 <Footer />
             </BrowserRouter>
