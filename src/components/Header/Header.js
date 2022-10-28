@@ -3,6 +3,7 @@ import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import "./Header.css";
 import { Button, TextField, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 function Header() {
     return (
         <>
@@ -10,13 +11,13 @@ function Header() {
                 <div className="container-fluid container-md p-0">
                     <nav class="navbar navbar-expand-lg px-2 px-lg-0">
                         <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
+                            <Link class="navbar-brand" to="/">
                                 <img
                                     src="/img/logo.webp"
                                     width={"100%"}
                                     alt=""
                                 />
-                            </a>
+                            </Link>
                             <button
                                 class="navbar-toggler"
                                 type="button"
@@ -34,26 +35,29 @@ function Header() {
                             >
                                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                                     <li class="nav-item">
-                                        <a
+                                        <Link
                                             class="nav-link "
                                             aria-current="page"
-                                            href="#"
+                                            to="/"
                                         >
                                             Home
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <Link
+                                            class="nav-link"
+                                            to="/additional-offerings"
+                                        >
                                             Our Services
                                             <KeyboardArrowDownRoundedIcon
                                                 sx={{ fontSize: "20px" }}
                                             />
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">
+                                        <Link class="nav-link" to="/contact">
                                             Contact
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

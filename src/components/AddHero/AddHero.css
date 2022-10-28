@@ -1,0 +1,9 @@
+.AddHero {
+    padding: 50px 20px 50px 20px;
+}
+/* 
+@media screen and (min-width: 992px) {
+    .AddHero {
+        text-align: left;
+    }
+} */
