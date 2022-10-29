@@ -6,7 +6,7 @@ import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownR
 function Hero() {
     return (
         <>
-            <section className="Hero">
+            <section className="Hero ">
                 <div className="container">
                     <Typography
                         variant="h1"

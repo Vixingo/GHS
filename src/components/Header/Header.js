@@ -1,14 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import "./Header.css";
 import { Button, TextField, Typography } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
+import { motion, Variants } from "framer-motion";
+
+const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            delayChildren: 0.3,
+            staggerChildren: 0.2,
+        },
+    },
+};
+
+const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+        y: 0,
+        opacity: 1,
+    },
+};
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const [dial, setDial] = useState(false);
+    const icon_change = () => {
+        dial == false ? setDial(true) : setDial(false);
+    };
     return (
         <>
             <section className="Header">
-                <div className="container-fluid container-md p-0">
+                <div className="container-fluid container-lg p-0">
                     <nav class="navbar navbar-expand-lg px-2 px-lg-0">
                         <div class="container-fluid">
                             <Link class="navbar-brand" to="/">
@@ -21,20 +48,17 @@ function Header() {
                             <button
                                 class="navbar-toggler"
                                 type="button"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#navbarSupportedContent"
-                                aria-controls="navbarSupportedContent"
-                                aria-expanded="false"
-                                aria-label="Toggle navigation"
+                                onClick={icon_change}
                             >
-                                <MenuRoundedIcon sx={{ fontsize: 40 }} />
+                                {dial == false ? (
+                                    <MenuRoundedIcon sx={{ fontsize: 40 }} />
+                                ) : (
+                                    <CloseIcon sx={{ fontsize: 40 }} />
+                                )}
                             </button>
-                            <div
-                                class="collapse navbar-collapse"
-                                id="navbarSupportedContent"
-                            >
-                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                                    <li class="nav-item">
+                            <div class="menu_big">
+                                <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 ">
+                                    <li variants={item} class="nav-item">
                                         <Link
                                             class="nav-link "
                                             aria-current="page"
@@ -43,15 +67,55 @@ function Header() {
                                             Home
                                         </Link>
                                     </li>
-                                    <li class="nav-item">
-                                        <Link
-                                            class="nav-link"
-                                            to="/additional-offerings"
-                                        >
+                                    <li class="nav-item sub_menu_holder">
+                                        <Link class="nav-link">
                                             Our Services
                                             <KeyboardArrowDownRoundedIcon
                                                 sx={{ fontSize: "20px" }}
                                             />
+                                            <ul className="sub_menu">
+                                                <Link to="/products-services/#TechnicalTeam">
+                                                    {" "}
+                                                    <li>
+                                                        <i className="fa-solid fa-people-carry-box"></i>{" "}
+                                                        Technical Team
+                                                        Augmentation{" "}
+                                                    </li>
+                                                </Link>
+                                                <Link to="/products-services/#SystemsDesign">
+                                                    {" "}
+                                                    <li>
+                                                        {" "}
+                                                        <i className="far fa-edit"></i>{" "}
+                                                        Systems Design and
+                                                        Integration
+                                                    </li>
+                                                </Link>
+                                                <Link to="/products-services/#Automation">
+                                                    {" "}
+                                                    <li>
+                                                        {" "}
+                                                        <i className="fa-solid fa-chalkboard-user"></i>{" "}
+                                                        Automation & Development
+                                                    </li>
+                                                </Link>
+                                                <Link to="/products-services/#Advocacy">
+                                                    {" "}
+                                                    <li>
+                                                        {" "}
+                                                        <i className="fa-regular fa-handshake"></i>{" "}
+                                                        Advocacy
+                                                    </li>
+                                                </Link>
+                                                <Link to="/additional-offerings">
+                                                    {" "}
+                                                    <li>
+                                                        {" "}
+                                                        <i className="far fa-plus-square"></i>{" "}
+                                                        Additional Offerings{" "}
+                                                    </li>
+                                                </Link>
+                                            </ul>
                                         </Link>
                                     </li>
                                     <li class="nav-item">
@@ -61,6 +125,42 @@ function Header() {
                                     </li>
                                 </ul>
                             </div>
+                            {dial == true ? (
+                                <div class="menu">
+                                    <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 ">
+                                        <li class="nav-item">
+                                            <Link
+                                                class="nav-link "
+                                                aria-current="page"
+                                                to="/"
+                                            >
+                                                Home
+                                            </Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link
+                                                class="nav-link"
+                                                to="/additional-offerings"
+                                            >
+                                                Our Services
+                                                <KeyboardArrowDownRoundedIcon
+                                                    sx={{ fontSize: "20px" }}
+                                                />
+                                            </Link>
+                                        </li>
+                                        <li class="nav-item">
+                                            <Link
+                                                class="nav-link"
+                                                to="/contact"
+                                            >
+                                                Contact
+                                            </Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            ) : (
+                                ""
+                            )}
                         </div>
                     </nav>
                     <div className="get_in">

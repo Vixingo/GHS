@@ -9,19 +9,19 @@ function ProHero() {
         <div>
             <section className="ProHero" style={{ backgroundColor: "#fff" }}>
                 <div className="container">
-                    <div className="row pt-5 pb-5">
+                    <div className="row pt-5 pb-5" id="TechnicalTeam">
                         <TechnicalTeam />
                     </div>
                     <hr />
-                    <div className="row pt-5 pb-5">
+                    <div className="row pt-5 pb-5" id="SystemsDesign">
                         <SystemsDesign />
                     </div>
                     <hr />
-                    <div className="row pt-5 pb-5">
+                    <div className="row pt-5 pb-5 " id="Automation">
                         <Automation />
                     </div>
                     <hr />
-                    <div className="row pt-5 pb-5">
+                    <div className="row pt-5 pb-5" id="Advocacy">
                         <Advocacy />
                     </div>
                 </div>

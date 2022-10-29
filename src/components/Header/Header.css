@@ -1,8 +1,14 @@
 /* Header */
 .Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
     background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
+    background: linear-gradient(270deg, #213580 45%, #194c9f 100%),
+        rgba(33, 53, 128, 0.8);
 }
-.Header .container-md {
+.Header .container-lg {
     position: relative;
 }
 .navbar {
@@ -20,20 +26,36 @@
     margin: auto 5px;
 }
 .nav-link {
-    color: #fff;
+    color: #000;
     font-family: "Roboto Slab", serif;
     font-weight: 500;
+    margin-left: 20px;
 }
 .nav-link:focus {
-    color: #fff;
+    color: #519a53;
 }
 .nav-link:hover {
-    color: #ffffffcc;
+    color: #519a53;
+}
+.drop {
+    filter: drop-shadow(1px 1px 1px #4700b3);
+    width: 300px;
 }
 .navbar-toggler:focus {
     box-shadow: none;
 }
-
+.menu {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background-color: #f7f7f7;
+    z-index: 100;
+    top: 88.5px;
+}
+.menu_big {
+    display: none;
+}
 .get_in button {
     color: #fff;
     background-color: #ce6c33;
@@ -100,6 +122,47 @@
     }
 }
 @media screen and (min-width: 992px) {
+    .menu {
+        display: none;
+    }
+    .menu_big {
+        display: block;
+    }
+    .sub_menu_holder {
+        position: relative;
+    }
+    .sub_menu {
+        position: absolute;
+        background-color: #fff;
+        right: 0;
+        z-index: 200;
+        display: none;
+        transition: 0.5s;
+        width: 300px;
+        border-radius: 5px;
+        padding: 20px;
+        list-style-type: none;
+        margin: 5px;
+    }
+    .sub_menu li {
+        font-family: "Exo 2";
+        color: #000;
+        transition: 0.3s;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ededed;
+    }
+    .sub_menu li:hover {
+        color: #519a53;
+        text-shadow: 0px 0px 15px rgb(101, 232, 101);
+    }
+
+    .sub_menu_holder:hover .sub_menu {
+        display: block;
+    }
+    .nav-link {
+        color: #fff;
+    }
     .nav-item {
         background-image: none;
     }

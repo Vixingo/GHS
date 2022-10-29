@@ -19,6 +19,7 @@ a {
     text-decoration: none;
 }
 body {
+    margin-top: 100px;
     overflow-x: hidden;
     background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
 }

@@ -1,0 +1,15 @@
+.Offer {
+    background-color: #309133;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.Offer .offer_bg {
+    margin: 10px;
+}
+.Offer .container {
+    max-width: 880px;
+    border-radius: 5px;
+    padding: 50px 50px 50px 50px;
+    margin: 0 auto;
+    background-color: #fff;
+}

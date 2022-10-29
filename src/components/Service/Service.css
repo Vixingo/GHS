@@ -21,11 +21,9 @@
 
     .Service_list {
         position: relative;
-
         padding: 50px;
-        max-width: 1200px;
+        max-width: 880px;
         top: -110px;
-
         margin: 0 10px 0 10px;
         /* position: absolute; */
         border-radius: 5px;

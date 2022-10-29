@@ -5,7 +5,13 @@ import "./Greenhouse.css";
 function Greenhouse2() {
     return (
         <>
-            <div className="Greenhouse2">
+            <div
+                className="Greenhouse2"
+                style={{
+                    background: "rgba(0, 0, 0, 0.8)",
+                    paddingBottom: "50px",
+                }}
+            >
                 <div className="container">
                     <Typography
                         sx={{
