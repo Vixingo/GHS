@@ -99,7 +99,18 @@
     margin-bottom: 10px;
     font-family: "Exo 2";
 }
-
+.sub_menu {
+    list-style-type: none;
+    margin: 5px;
+}
+.sub_menu li {
+    font-family: "Exo 2";
+    color: #000;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ededed;
+}
 @media screen and (min-width: 768px) {
     .navbar {
         height: 100px;
@@ -144,14 +155,7 @@
         list-style-type: none;
         margin: 5px;
     }
-    .sub_menu li {
-        font-family: "Exo 2";
-        color: #000;
-        transition: 0.3s;
-        margin-bottom: 5px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ededed;
-    }
+
     .sub_menu li:hover {
         color: #519a53;
         text-shadow: 0px 0px 15px rgb(101, 232, 101);

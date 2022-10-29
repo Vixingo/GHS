@@ -138,15 +138,68 @@ function Header() {
                                             </Link>
                                         </li>
                                         <li class="nav-item">
-                                            <Link
+                                            <a
+                                                data-bs-toggle="collapse"
+                                                href="#collapseExample"
+                                                role="button"
+                                                aria-expanded="false"
+                                                aria-controls="collapseExample"
                                                 class="nav-link"
-                                                to="/additional-offerings"
                                             >
                                                 Our Services
                                                 <KeyboardArrowDownRoundedIcon
                                                     sx={{ fontSize: "20px" }}
                                                 />
-                                            </Link>
+                                            </a>
+                                            <div
+                                                class="collapse"
+                                                id="collapseExample"
+                                            >
+                                                <ul className="sub_menu">
+                                                    <Link to="/products-services/#TechnicalTeam">
+                                                        {" "}
+                                                        <li>
+                                                            <i className="fa-solid fa-people-carry-box"></i>{" "}
+                                                            Technical Team
+                                                            Augmentation{" "}
+                                                        </li>
+                                                    </Link>
+                                                    <Link to="/products-services/#SystemsDesign">
+                                                        {" "}
+                                                        <li>
+                                                            {" "}
+                                                            <i className="far fa-edit"></i>{" "}
+                                                            Systems Design and
+                                                            Integration
+                                                        </li>
+                                                    </Link>
+                                                    <Link to="/products-services/#Automation">
+                                                        {" "}
+                                                        <li>
+                                                            {" "}
+                                                            <i className="fa-solid fa-chalkboard-user"></i>{" "}
+                                                            Automation &
+                                                            Development
+                                                        </li>
+                                                    </Link>
+                                                    <Link to="/products-services/#Advocacy">
+                                                        {" "}
+                                                        <li>
+                                                            {" "}
+                                                            <i className="fa-regular fa-handshake"></i>{" "}
+                                                            Advocacy
+                                                        </li>
+                                                    </Link>
+                                                    <Link to="/additional-offerings">
+                                                        {" "}
+                                                        <li>
+                                                            {" "}
+                                                            <i className="far fa-plus-square"></i>{" "}
+                                                            Additional Offerings{" "}
+                                                        </li>
+                                                    </Link>
+                                                </ul>
+                                            </div>
                                         </li>
                                         <li class="nav-item">
                                             <Link
