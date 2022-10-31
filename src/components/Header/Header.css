@@ -104,13 +104,24 @@
     margin: 5px;
 }
 .sub_menu li {
-    font-family: "Exo 2";
-    color: #000;
     transition: 0.3s;
-    margin-bottom: 5px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ededed;
 }
+.sub_menu p {
+    font-family: "Exo 2";
+    color: #000;
+}
+.sub_menu li span {
+    font-weight: 300;
+    font-size: 12px;
+    display: block;
+    transition: 0.3s;
+}
+.sub_menu li:hover {
+    color: #519a53;
+}
+
 @media screen and (min-width: 768px) {
     .navbar {
         height: 100px;
@@ -133,6 +144,70 @@
     }
 }
 @media screen and (min-width: 992px) {
+    .sub_menu li:hover span {
+        font-size: 14px;
+    }
+
+    .icon_wrapper1 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding: 12px;
+        margin: 10px;
+        background-color: #309133;
+    }
+    .icon_wrapper2 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding: 12px;
+        margin: 10px;
+        background-color: #1937a9;
+    }
+    .icon_wrapper3 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding: 12px;
+        margin: 10px;
+        background-color: #efa852;
+    }
+    .icon_wrapper4 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding: 12px;
+        margin: 10px;
+        background-color: #ce6c33;
+    }
+    .icon_wrapper5 {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        padding: 12px;
+        margin: 10px;
+        background-color: #49cae3;
+    }
+    .icon_wrapper1 i,
+    .icon_wrapper2 i,
+    .icon_wrapper3 i,
+    .icon_wrapper4 i,
+    .icon_wrapper5 i {
+        color: #fff;
+        font-size: 25px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .sub_menu li {
+        transition: 0.3s;
+        padding-bottom: 10px;
+        border: 0;
+    }
+    .sub_menu a {
+        color: unset;
+    }
     .menu {
         display: none;
     }
@@ -149,16 +224,11 @@
         z-index: 200;
         display: none;
         transition: 0.5s;
-        width: 300px;
+        width: 400px;
         border-radius: 5px;
         padding: 20px;
         list-style-type: none;
         margin: 5px;
-    }
-
-    .sub_menu li:hover {
-        color: #519a53;
-        text-shadow: 0px 0px 15px rgb(101, 232, 101);
     }
 
     .sub_menu_holder:hover .sub_menu {

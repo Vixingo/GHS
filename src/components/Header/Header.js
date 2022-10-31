@@ -76,43 +76,126 @@ function Header() {
                                             <ul className="sub_menu">
                                                 <Link to="/products-services/#TechnicalTeam">
                                                     {" "}
-                                                    <li>
-                                                        <i className="fa-solid fa-people-carry-box"></i>{" "}
-                                                        Technical Team
-                                                        Augmentation{" "}
+                                                    <li
+                                                        style={{
+                                                            display: "flex",
+                                                            alignItems:
+                                                                "center",
+                                                        }}
+                                                    >
+                                                        <div className="icon_wrapper1">
+                                                            <i className="fa-solid fa-people-carry-box"></i>{" "}
+                                                        </div>
+                                                        <p>
+                                                            {" "}
+                                                            Technical Team
+                                                            Augmentation{" "}
+                                                            <span>
+                                                                We support IT
+                                                                Team
+                                                            </span>
+                                                        </p>
                                                     </li>
                                                 </Link>
                                                 <Link to="/products-services/#SystemsDesign">
                                                     {" "}
-                                                    <li>
+                                                    <li
+                                                        style={{
+                                                            display: "flex",
+                                                            alignItems:
+                                                                "center",
+                                                        }}
+                                                    >
                                                         {" "}
-                                                        <i className="far fa-edit"></i>{" "}
-                                                        Systems Design and
-                                                        Integration
+                                                        <div className="icon_wrapper2">
+                                                            <i className="far fa-edit"></i>{" "}
+                                                        </div>
+                                                        <p>
+                                                            {" "}
+                                                            Systems Design and
+                                                            Integration
+                                                            <span>
+                                                                {" "}
+                                                                Best-in-class
+                                                                Integration
+                                                                Specialists{" "}
+                                                            </span>
+                                                        </p>
                                                     </li>
                                                 </Link>
                                                 <Link to="/products-services/#Automation">
                                                     {" "}
-                                                    <li>
+                                                    <li
+                                                        style={{
+                                                            display: "flex",
+                                                            alignItems:
+                                                                "center",
+                                                        }}
+                                                    >
                                                         {" "}
-                                                        <i className="fa-solid fa-chalkboard-user"></i>{" "}
-                                                        Automation & Development
+                                                        <div className="icon_wrapper3">
+                                                            <i className="fa-solid fa-chalkboard-user"></i>{" "}
+                                                        </div>
+                                                        <p>
+                                                            {" "}
+                                                            Automation &
+                                                            Development
+                                                            <span>
+                                                                {" "}
+                                                                Seamless
+                                                                organisation-wide
+                                                                automation{" "}
+                                                            </span>
+                                                        </p>
                                                     </li>
                                                 </Link>
                                                 <Link to="/products-services/#Advocacy">
                                                     {" "}
-                                                    <li>
+                                                    <li
+                                                        style={{
+                                                            display: "flex",
+                                                            alignItems:
+                                                                "center",
+                                                        }}
+                                                    >
                                                         {" "}
-                                                        <i className="fa-regular fa-handshake"></i>{" "}
-                                                        Advocacy
+                                                        <div className="icon_wrapper4">
+                                                            <i className="fa-regular fa-handshake"></i>{" "}
+                                                        </div>
+                                                        <p>
+                                                            {" "}
+                                                            Advocacy{" "}
+                                                            <span>
+                                                                {" "}
+                                                                Let us advocate
+                                                                on your behalf{" "}
+                                                            </span>
+                                                        </p>
                                                     </li>
                                                 </Link>
                                                 <Link to="/additional-offerings">
                                                     {" "}
-                                                    <li>
+                                                    <li
+                                                        style={{
+                                                            display: "flex",
+                                                            alignItems:
+                                                                "center",
+                                                        }}
+                                                    >
                                                         {" "}
-                                                        <i className="far fa-plus-square"></i>{" "}
-                                                        Additional Offerings{" "}
+                                                        <div className="icon_wrapper5">
+                                                            <i className="far fa-plus-square"></i>
+                                                        </div>
+                                                        <p>
+                                                            Additional Offerings{" "}
+                                                            <span>
+                                                                {" "}
+                                                                Voice & Data
+                                                                Solutions |
+                                                                Security & IT
+                                                                Support{" "}
+                                                            </span>
+                                                        </p>
                                                     </li>
                                                 </Link>
                                             </ul>

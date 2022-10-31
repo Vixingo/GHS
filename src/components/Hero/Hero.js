@@ -2,50 +2,68 @@ import { Box, Typography } from "@mui/material";
 import "./Hero.css";
 import React from "react";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
-
+import { motion } from "framer-motion";
 function Hero() {
     return (
         <>
             <section className="Hero ">
                 <div className="container">
-                    <Typography
-                        variant="h1"
-                        sx={{
-                            color: "#fff",
-                            fontWeight: "600",
-                            fontSize: "28px",
-                            fontFamily: "Roboto Slab",
-                            maxWidth: "780px",
-                            margin: "0 auto",
-                            textAlign: "center",
-                            lineHeight: "62px",
-                            marginBottom: "20px",
-                            "@media(min-width:768px)": {
-                                fontSize: "50px",
-                            },
-                        }}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
                     >
-                        Greenhouse Systems provides Expert Systems Integration
-                        Services in Australia, Canada, and USA
-                    </Typography>
-                    <Typography
-                        sx={{
-                            textAlign: "center",
-                            color: "#FFFFFFD6",
-                            fontSize: "16px",
-                            fontWeight: "400",
-                            fontFamily: "Roboto",
-                            maxWidth: "780px",
-                            margin: "0 auto",
-                            "@media(min-width:768px)": {
-                                fontSize: "23px",
-                            },
-                        }}
+                        {" "}
+                        <Typography
+                            variant="h1"
+                            sx={{
+                                color: "#fff",
+                                fontWeight: "600",
+                                fontSize: "28px",
+                                fontFamily: "Roboto Slab",
+                                maxWidth: "780px",
+                                margin: "0 auto",
+                                textAlign: "center",
+                                lineHeight: "62px",
+                                marginBottom: "20px",
+                                "@media(min-width:768px)": {
+                                    fontSize: "50px",
+                                },
+                            }}
+                        >
+                            Greenhouse Systems provides Expert Systems
+                            Integration Services in Australia, Canada, and USA
+                        </Typography>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, padding: 50 }}
+                        animate={{ opacity: 1, padding: 0 }}
+                        transition={{ duration: 1.2 }}
                     >
-                        Greenhouse Systems – supporting growth through
-                        connections.{" "}
-                    </Typography>
-                    <div className=" icon_box row ">
+                        <Typography
+                            sx={{
+                                textAlign: "center",
+                                color: "#FFFFFFD6",
+                                fontSize: "16px",
+                                fontWeight: "400",
+                                fontFamily: "Roboto",
+                                maxWidth: "780px",
+                                margin: "0 auto",
+                                "@media(min-width:768px)": {
+                                    fontSize: "23px",
+                                },
+                            }}
+                        >
+                            Greenhouse Systems – supporting growth through
+                            connections.{" "}
+                        </Typography>
+                    </motion.div>
+                    <motion.div
+                        className=" icon_box row "
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                    >
                         <Box className="col-md-3 col-6">
                             <i class="fa-solid fa-brain"></i>
                             <p>
@@ -73,7 +91,7 @@ function Hero() {
                                 Strategy &<br /> Governance
                             </p>
                         </Box>
-                    </div>
+                    </motion.div>
                     <a href="#Choose">
                         <Box
                             sx={{

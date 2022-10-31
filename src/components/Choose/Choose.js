@@ -1,11 +1,13 @@
 import { Typography } from "@mui/material";
 import React from "react";
+
 import "./Choose.css";
+
 function Choose() {
     return (
         <>
             <section className="Choose" id="Choose">
-                <div className="container">
+                <div className="container ">
                     <Typography
                         sx={{
                             fontSize: "24px",
