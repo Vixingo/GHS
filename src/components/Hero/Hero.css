@@ -1,31 +1,60 @@
 .Hero {
-    margin-top: 30px;
-    height: 100vh;
-    background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
+  margin-top: 30px;
+  height: 106vh;
+  background-image: linear-gradient(270deg, #213580 45%, #194c9f 100%);
 }
 .icon_box {
-    text-align: center;
-    max-width: 900px;
-    padding: 30px;
-    margin: 20px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  text-align: center;
+  max-width: 900px;
+  padding: 30px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .Hero i {
-    color: #fff;
-    font-size: 50px;
-    margin-bottom: 15px;
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 15px;
 }
 .icon_box p {
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
-    font-family: "Exo 2", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  font-family: "Exo 2", sans-serif;
+}
+@media screen and (min-width: 768px) {
+  .Hero {
+    margin-top: 100px;
+    height: 85vh;
+    position: relative;
+  }
+  .learn_more {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Hero {
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .Hero {
+    height: 81vh;
+  }
+}
+@media screen and (min-width: 1300px) {
+  .Hero {
+    margin-top: 70px;
+  }
 }
 @media screen and (min-width: 1600px) {
-    .Hero {
-        margin-top: 150px;
-        margin-bottom: 50px;
-    }
+  .Hero {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    height: 80vh;
+  }
 }

@@ -92,35 +92,41 @@ function Hero() {
                             </p>
                         </Box>
                     </motion.div>
-                    <a href="#Choose">
-                        <Box
-                            sx={{
-                                textAlign: "center",
-                                "@media (min-width:1400px)": {
-                                    marginTop: "100px",
-                                },
-                            }}
-                        >
-                            <KeyboardArrowDownRoundedIcon
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 3 }}
+                    >
+                        <a href="#Choose" className="learn_more">
+                            <Box
                                 sx={{
-                                    fontSize: "50px",
-                                    color: "#fff",
-                                    marginBottom: "-10px",
-                                }}
-                            />
-                            <Typography
-                                sx={{
-                                    color: "#fff",
-                                    fontFamily: "Roboto Slab",
-                                    fontWeight: "600",
-                                    fontSize: "18px",
-                                    paddingBottom: "20px",
+                                    textAlign: "center",
+                                    "@media (min-width:1400px)": {
+                                        marginTop: "100px",
+                                    },
                                 }}
                             >
-                                Learn More
-                            </Typography>
-                        </Box>
-                    </a>
+                                <KeyboardArrowDownRoundedIcon
+                                    sx={{
+                                        fontSize: "50px",
+                                        color: "#fff",
+                                        marginBottom: "-10px",
+                                    }}
+                                />
+                                <Typography
+                                    sx={{
+                                        color: "#fff",
+                                        fontFamily: "Roboto Slab",
+                                        fontWeight: "600",
+                                        fontSize: "18px",
+                                        paddingBottom: "20px",
+                                    }}
+                                >
+                                    Learn More
+                                </Typography>
+                            </Box>
+                        </a>
+                    </motion.div>{" "}
                 </div>
             </section>
         </>

@@ -14,18 +14,11 @@ const item = {
     },
 };
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
     const [dial, setDial] = useState(false);
     const icon_change = () => {
         dial == false ? setDial(true) : setDial(false);
     };
-    const handleClickScroll = () => {
-        const element = document.getElementById("#Automation");
-        if (element) {
-            // 👇 Will scroll smoothly to the top of the next section
-            element.scrollIntoView({ behavior: "smooth" });
-        }
-    };
-
     return (
         <>
             <section className="Header">
@@ -78,7 +71,7 @@ function Header() {
                                                         }}
                                                     >
                                                         <div className="icon_wrapper1">
-                                                            <i className="fa-solid fa-people-carry-box"></i>
+                                                            <i className="fa-solid fa-people-carry-box"></i>{" "}
                                                         </div>
                                                         <p>
                                                             {" "}
@@ -91,11 +84,7 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link
-                                                    to={
-                                                        "/products-services/#SystemsDesign"
-                                                    }
-                                                >
+                                                <Link to="/products-services/#SystemsDesign">
                                                     {" "}
                                                     <li
                                                         style={{
@@ -121,10 +110,7 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link
-                                                    to="/products-services/#Automation"
-                                                    onClic
-                                                >
+                                                <Link to="/products-services/#Automation">
                                                     {" "}
                                                     <li
                                                         style={{
@@ -150,10 +136,7 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link
-                                                    to="/products-services/#Advocacy"
-                                                    onClick={handleClickScroll}
-                                                >
+                                                <Link to="/products-services/#Advocacy">
                                                     {" "}
                                                     <li
                                                         style={{
@@ -217,7 +200,7 @@ function Header() {
                                     <ul class=" navbar-nav ms-auto mb-2 mb-lg-0 ">
                                         <li class="nav-item">
                                             <Link
-                                                class="nav-link "
+                                                class="nav-link navLinks"
                                                 aria-current="page"
                                                 to="/"
                                             >
@@ -231,7 +214,7 @@ function Header() {
                                                 role="button"
                                                 aria-expanded="false"
                                                 aria-controls="collapseExample"
-                                                class="nav-link"
+                                                class="nav-link navLinks"
                                             >
                                                 Our Services
                                                 <KeyboardArrowDownRoundedIcon
@@ -243,7 +226,10 @@ function Header() {
                                                 id="collapseExample"
                                             >
                                                 <ul className="sub_menu">
-                                                    <Link to="/products-services/#TechnicalTeam">
+                                                    <Link
+                                                        to="/products-services/#TechnicalTeam"
+                                                        className="subnavLinks"
+                                                    >
                                                         {" "}
                                                         <li>
                                                             <i className="fa-solid fa-people-carry-box"></i>{" "}
@@ -251,7 +237,10 @@ function Header() {
                                                             Augmentation{" "}
                                                         </li>
                                                     </Link>
-                                                    <Link to="/products-services/#SystemsDesign">
+                                                    <Link
+                                                        to="/products-services/#SystemsDesign"
+                                                        className="subnavLinks"
+                                                    >
                                                         {" "}
                                                         <li>
                                                             {" "}
@@ -260,7 +249,10 @@ function Header() {
                                                             Integration
                                                         </li>
                                                     </Link>
-                                                    <Link to="/products-services/#Automation">
+                                                    <Link
+                                                        to="/products-services/#Automation"
+                                                        className="subnavLinks"
+                                                    >
                                                         {" "}
                                                         <li>
                                                             {" "}
@@ -269,7 +261,10 @@ function Header() {
                                                             Development
                                                         </li>
                                                     </Link>
-                                                    <Link to="/products-services/#Advocacy">
+                                                    <Link
+                                                        to="/products-services/#Advocacy"
+                                                        className="subnavLinks"
+                                                    >
                                                         {" "}
                                                         <li>
                                                             {" "}
@@ -277,7 +272,10 @@ function Header() {
                                                             Advocacy
                                                         </li>
                                                     </Link>
-                                                    <Link to="/additional-offerings">
+                                                    <Link
+                                                        to="/additional-offerings"
+                                                        className="subnavLinks"
+                                                    >
                                                         {" "}
                                                         <li>
                                                             {" "}
@@ -290,7 +288,7 @@ function Header() {
                                         </li>
                                         <li class="nav-item">
                                             <Link
-                                                class="nav-link"
+                                                class="nav-link navLinks"
                                                 to="/contact"
                                             >
                                                 Contact
