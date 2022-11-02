@@ -144,6 +144,9 @@
     }
 }
 @media screen and (min-width: 992px) {
+    .nav-link {
+        padding: 20px;
+    }
     .sub_menu li:hover span {
         font-size: 14px;
     }
@@ -220,7 +223,8 @@
     .sub_menu {
         position: absolute;
         background-color: #fff;
-        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 200;
         display: none;
         transition: 0.5s;
@@ -228,7 +232,7 @@
         border-radius: 5px;
         padding: 20px;
         list-style-type: none;
-        margin: 5px;
+        margin-top: 15px;
     }
 
     .sub_menu_holder:hover .sub_menu {

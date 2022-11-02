@@ -2,10 +2,12 @@ import React from "react";
 import GetInTouch from "../components/GetInTouch/GetInTouch";
 import Enquiry from "../components/Enquiry/Enquiry";
 import { Box } from "@mui/material";
+import Header from "../components/Header/Header";
 
 function Contact() {
     return (
         <>
+            <Header />
             <Box
                 className="Contact"
                 sx={{

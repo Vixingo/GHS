@@ -2,22 +2,9 @@ import React, { useState } from "react";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import KeyboardArrowDownRoundedIcon from "@mui/icons-material/KeyboardArrowDownRounded";
 import "./Header.css";
-import { Button, TextField, Typography } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link } from "react-router-dom";
-import { motion, Variants } from "framer-motion";
-
-const container = {
-    hidden: { opacity: 1, scale: 0 },
-    visible: {
-        opacity: 1,
-        scale: 1,
-        transition: {
-            delayChildren: 0.3,
-            staggerChildren: 0.2,
-        },
-    },
-};
 
 const item = {
     hidden: { y: 20, opacity: 0 },
@@ -27,11 +14,18 @@ const item = {
     },
 };
 function Header() {
-    const [isOpen, setIsOpen] = useState(false);
     const [dial, setDial] = useState(false);
     const icon_change = () => {
         dial == false ? setDial(true) : setDial(false);
     };
+    const handleClickScroll = () => {
+        const element = document.getElementById("#Automation");
+        if (element) {
+            // 👇 Will scroll smoothly to the top of the next section
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <>
             <section className="Header">
@@ -84,7 +78,7 @@ function Header() {
                                                         }}
                                                     >
                                                         <div className="icon_wrapper1">
-                                                            <i className="fa-solid fa-people-carry-box"></i>{" "}
+                                                            <i className="fa-solid fa-people-carry-box"></i>
                                                         </div>
                                                         <p>
                                                             {" "}
@@ -97,7 +91,11 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link to="/products-services/#SystemsDesign">
+                                                <Link
+                                                    to={
+                                                        "/products-services/#SystemsDesign"
+                                                    }
+                                                >
                                                     {" "}
                                                     <li
                                                         style={{
@@ -123,7 +121,10 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link to="/products-services/#Automation">
+                                                <Link
+                                                    to="/products-services/#Automation"
+                                                    onClic
+                                                >
                                                     {" "}
                                                     <li
                                                         style={{
@@ -149,7 +150,10 @@ function Header() {
                                                         </p>
                                                     </li>
                                                 </Link>
-                                                <Link to="/products-services/#Advocacy">
+                                                <Link
+                                                    to="/products-services/#Advocacy"
+                                                    onClick={handleClickScroll}
+                                                >
                                                     {" "}
                                                     <li
                                                         style={{
